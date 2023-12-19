@@ -21,6 +21,8 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #111;
+  overflow: hidden;
 }
 
 * {
@@ -31,28 +33,32 @@ body {
 
 .board {
   width: fit-content;
-  margin: 40px auto;
   text-align: center;
 }
 
-.board h1 {
-  color: #111;
-  margin-bottom: 16px;
+.board__h1 {
+  color: white;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  position: relative;
+  top: -80px;
 }
 
-.board button {
+.button {
   padding: 8px 12px;
   margin: 25px;
   background: transparent;
-  border: 2px solid #111;
-  color: #111;
+  border: 2px solid white;
+  color: white;
   width: 100px;
   border-radius: 5px;
   transition: 0.2s;
   font-weight: bold;
   cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
-
 .board button:hover {
   background: #eee;
   color: #222;
@@ -61,11 +67,8 @@ body {
 .board .game {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: black;
-  box-shadow: 10px 10px 25px -6px rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
   gap: 4px;
-  margin-bottom: 28px;
-  transform: skew(0deg, -1deg);
 }
 
 .turn {
@@ -84,14 +87,23 @@ body {
   pointer-events: none;
   border-color: transparent;
 }
-
+.winner {
+  position: fixed;
+}
+.turn {
+  margin-top: 50px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
 .square.is-selected {
   color: #fff;
-  background: #111;
+  border: 1px solid white;
+  border-radius: 8px;
 }
 
 .winner {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -102,22 +114,21 @@ body {
 }
 
 .winner .text {
-  background: #e8db52;
   height: 300px;
   width: 320px;
-  border: 2px solid #111;
+  border: 2px solid white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: #078b43;
 }
 
 .winner .win {
   margin: 0 auto;
   width: fit-content;
-  border: 2px solid #111;
   border-radius: 10px;
   display: flex;
   gap: 15px;
@@ -130,6 +141,32 @@ body {
   place-items: center;
   cursor: pointer;
   font-size: 48px;
-  background-color: #e8db52;
-  color: #111;
+  background-color: #078b43;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.board__background {
+  width: 900px;
+  height: 400px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  background-color: #078b43;
+  position: relative;
+  border: 12px groove #be7843;
+}
+.button__restart {
+  padding: 8px 12px;
+  margin: 25px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-weight: bold;
+  cursor: pointer;
 }
