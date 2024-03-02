@@ -4,7 +4,6 @@ import { TURNS } from "./constants.js";
 import { checkWinnerFrom, checkEndGame } from "./logic/board.js";
 import { WinnerModal } from "./components/WinnerModal.jsx";
 import { saveGameToStorage, resetGameStorage } from "./logic/storage/index.js";
-import TizaCursor from "./components/TizaCursor.jsx";
 
 function App() {
   const [board, setBoard] = useState(() => {
@@ -53,9 +52,6 @@ function App() {
 
   return (
     <main className="board__background">
-      <button onClick={resetGame} className="button">
-        Reset Game
-      </button>
       <h1 className="board__h1">Tic-tac-toe</h1>
       <div className="board">
         <section className="game">
@@ -67,6 +63,9 @@ function App() {
             );
           })}
         </section>
+        <button onClick={resetGame} className="button">
+          Reset Game
+        </button>
         <section className="turn">
           <Square isSelected={turn === TURNS.X}>{TURNS.X}</Square>
           <Square isSelected={turn === TURNS.O}>{TURNS.O}</Square>
