@@ -23,6 +23,7 @@ body {
   min-height: 100vh;
   background-image: url("https://i.imgur.com/cZ3HI0C.jpeg");
   overflow: hidden;
+  font-family: "Indie Flower", "Comic Sans", cursive;
 }
 
 * {
