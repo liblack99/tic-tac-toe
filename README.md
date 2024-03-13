@@ -48,7 +48,7 @@ Puedes jugar al juego de Tic Tac Toe [aquí](https://liblack99.github.io/Tasks-m
 
 Este proyecto está bajo la [Licencia MIT](LICENSE).
 
-## Captura de pantalla de ejemplo
+
 
 
 
