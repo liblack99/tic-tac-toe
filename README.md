@@ -4,7 +4,7 @@ Este es un proyecto de juego de Tic Tac Toe desarrollado con React. El juego per
 
 ## Demo
 
-Puedes jugar al juego de Tic Tac Toe [aquí](https://liblack99.github.io/Tasks-machine/) 
+Puedes jugar al juego de Tic Tac Toe [aquí](https://liblack99.github.io/tic-tac-toe/)
 
 ## Capturas de pantalla
 
@@ -47,8 +47,3 @@ Puedes jugar al juego de Tic Tac Toe [aquí](https://liblack99.github.io/Tasks-m
 ## Licencia
 
 Este proyecto está bajo la [Licencia MIT](LICENSE).
-
-
-
-
-
