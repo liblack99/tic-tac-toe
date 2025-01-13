@@ -8,7 +8,7 @@ Puedes jugar al juego de Tic Tac Toe [aquí](https://liblack99.github.io/tic-tac
 
 ## Capturas de pantalla
 
-![tic tac toe](https://i.imgur.com/jWSTgi8.png)
+![tic tac toe](https://firebasestorage.googleapis.com/v0/b/pelagic-earth-407809.appspot.com/o/proyectos%2Ftictactoe.webp?alt=media&token=8ff8a07a-b081-476b-9f80-13edbd46e0a8)
 
 ## Características
 
